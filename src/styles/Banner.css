@@ -1,0 +1,31 @@
+.banner {
+  position: relative;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.banner_image {
+  width: 100%;
+  object-fit: cover;
+  height: 223px;
+  border-radius: 25px;
+  filter: brightness(75%);
+}
+
+.banner_text {
+  position: absolute;
+  font-size: 48px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  left: 10%;
+  margin: 0;
+  right: 10%;
+  top: 30%;
+  bottom: 49.04%;
+  font-family: "Montserrat";
+}
+
+
