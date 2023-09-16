@@ -1,6 +1,6 @@
 import logo from "../assets/logo_footer.png";
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="footer">
       <img src={logo} alt="logo" className="footer_logo" />
@@ -9,4 +9,3 @@ function Footer() {
   );
 }
 
-export default Footer;

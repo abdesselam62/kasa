@@ -1,6 +1,6 @@
 import "../styles/Card.css";
 
-function Card({ title, cover }) {
+export default function Card({ title, cover }) {
   return (
     <div className="card">
       <img src={cover} alt={title} className="card_img" />
@@ -11,4 +11,4 @@ function Card({ title, cover }) {
   );
 }
 
-export default Card;
+

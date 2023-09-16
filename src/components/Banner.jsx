@@ -1,6 +1,6 @@
 import "../styles/Banner.css";
 
-function Banner({ picture, title, alt }) {
+export default function Banner({ picture, title, alt }) {
   return (
     <div className="banner">
       <img src={picture} alt={alt} className="banner_image" />
@@ -9,4 +9,4 @@ function Banner({ picture, title, alt }) {
   );
 }
 
-export default Banner;
+

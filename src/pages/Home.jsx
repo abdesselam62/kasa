@@ -3,10 +3,10 @@ import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Lodgings from "../datas/logements.json";
-import banner from "../assets/banner.png";
+import banner from "../assets/banner_home.png";
 import "../styles/Card.css";
 
-function Home() {
+export default function Home() {
   const [lodgings] = useState(Lodgings);
   return (
     <div>
@@ -26,4 +26,4 @@ function Home() {
   );
 }
 
-export default Home;
+
