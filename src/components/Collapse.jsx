@@ -1,7 +1,7 @@
 
 import { useState } from "react";//Importation du Hook useState depuis React. Permet d’utiliser un état local dans une fonction composant.
-import chevron_close from "../assets/chevron_close.png";
-import chevron_open from "../assets/chevron_open.png";
+import chevronDown from "../assets/chevron_down.png";
+import chevronUp from "../assets/chevron_up.png";
 import "../styles/Collapse.css";
 
 export default function Collapse({ title, texte }) {
@@ -12,7 +12,7 @@ export default function Collapse({ title, texte }) {
       <div className="collapse_head" onClick={() => setIsOpen(false)}>
         <span className="collapse_title">{title}</span>
         <img
-          src={chevron_open}
+          src={chevronUp}
           alt="chevron collapse"
           className="collapse_img">          
         </img>        
@@ -26,7 +26,7 @@ export default function Collapse({ title, texte }) {
       <div className="collapse_head" onClick={() => setIsOpen(true)}>
         <span className="collapse_title">{title}</span>
         <img
-          src={chevron_close}
+          src={chevronDown}
           alt="chevron collapse"
           className="collapse_img"
         ></img>
