@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Slider from "../components/Slideshow";
 import Collapse from "../components/Collapse";
 import Lodgings from "../datas/logements.json";
@@ -9,6 +9,9 @@ function Lodging() {
   const { fichelogement } = useParams();
   const lodgingInfo = Lodgings.find((lodging) => lodging.id === fichelogement);
 
+  if (lodgingInfo === undefined) {
+    return <Navigate to="*" />;
+  }
  
     return (
     <div>
