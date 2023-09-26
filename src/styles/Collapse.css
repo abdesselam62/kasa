@@ -48,3 +48,26 @@
   color: #ff6060;
 }
 
+
+@media (max-width: 769px) {
+  .collapse {
+    width: 85%;
+  }
+  .collapse_head {
+    height: 30px;
+  }
+  .collapse_title {
+    font-size: 13px;
+  }
+
+  .collapse_img {
+    width: 9px;
+    height: 9px;
+    padding-right: 10px;
+  }
+  .collapse_texte {
+    font-size: 13px;
+    padding: 23.08px 6.91px 52.58px 11.51px;
+  }
+}
+

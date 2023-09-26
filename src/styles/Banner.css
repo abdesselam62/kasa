@@ -28,4 +28,17 @@
   font-family: "Montserrat";
 }
 
+@media all and (max-width: 812px) {
+  .banner {
+    margin-bottom: 22px;
+  }
+  .banner_image {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .banner_text {
+    font-size: 24px;
+    text-align: left;
+  }
+}
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,7 +9,7 @@ import Lodging from '../pages/Lodging';
 
 export default function RoutesAndPaths() {
     return (
-        <BrowserRouter>
+        <Router>
             <Header />
             <Routes>
                 <Route path='/' element={<Home />}/>
@@ -19,7 +19,7 @@ export default function RoutesAndPaths() {
                 
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </Router>
     )
 
 }

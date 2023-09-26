@@ -54,3 +54,22 @@
   color: #ffffff;
 }
 
+@media (max-width: 769px) {
+  .card_content {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: initial;
+    padding-top: 0;
+  }
+  .card {
+    height: 255px;
+    width: 100%;
+  }
+
+  .card_title_content {
+    height: 255px;
+    width: 100%;
+  }
+}

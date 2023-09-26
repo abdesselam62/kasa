@@ -24,5 +24,22 @@
   .lodging_equipement {
     list-style: none;
   }
+
+  @media (max-width: 769px) {
+    .lodging_collapse {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+  
+    .lodging_collapse_element p {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .lodging_collapse_element span {
+      font-size: 13px;
+    }
+  }
   
   
