@@ -16,7 +16,6 @@ export default function RoutesAndPaths() {
                 <Route path='/about' element={<About />}/>
                 <Route path='*' element={<Error />}/>
                 <Route path="/lodging/:fichelogement" element={<Lodging />} />
-                
             </Routes>
             <Footer />
         </Router>

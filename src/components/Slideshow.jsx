@@ -24,16 +24,27 @@ function Slider({ imageSlider }) {
           <div className="slideShow_img">
               <img key={imageSlider.id} className="slideShow_img" src={imageSlider[currentIndex]} alt={imageSlider.title}/>
           </div>
-          <div className="slideShow_number">
-              {currentIndex + 1}/{imageSlider.length}
-          </div>
+          
           <div>
-              {imageSlider.length > 1 && ( // Si il y a plus d'une image, on affiche les chevrons
-                  <>
-                  <img className="chevron_left" src={chevronLeft} onClick={prevSlide} alt="chevron_left"/>
-                  <img className="chevron_right" src={chevronRight} onClick={nextSlide} alt="chevron_right"/>
-                  </>
-              )}
+              {imageSlider.length > 1 && ( // Si il y a plus d'une image, on affiche les chevrons et la numérotation
+                <>
+                  <img 
+                      className="chevron_left" 
+                      src={chevronLeft} 
+                      onClick={prevSlide} 
+                      alt="chevron_left"
+                  />
+                  <img 
+                      className="chevron_right" 
+                      src={chevronRight} 
+                      onClick={nextSlide} 
+                      alt="chevron_right"
+                  />
+                  <div className="slideShow_number">
+                      {currentIndex + 1}/{imageSlider.length}
+                  </div>
+                </>)
+              }
           </div>
       </div>
   )
